@@ -17,7 +17,8 @@ reverseGeocode(coordenada,(error,dataResponse)=>{
                 console.log("se presentó un error");
             }
             else{
-                console.log(climaResponse.current.temperature);
+                console.log(climaResponse.temperature);
+                //console.log(climaResponse.current.temperature); es incorrecto ya que la estructura del objeto climaResponse ya provee la parte de current
             }
         })
     }
